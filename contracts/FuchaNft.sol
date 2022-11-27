@@ -14,7 +14,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/draft-ERC721Votes.sol";
 contract FuchaNft is ERC721URIStorage, Ownable, EIP712, ERC721Votes {
     uint256 public tokenCounter;
     address fucha_owner;
-    address[] fucha_owners;
+    address[] public fucha_owners;
     string[] public breed = ["FuchaProto", "FuchaTemboY", "FuchaTemboG"]; // nft name to be minted based on this contracts collection, to be updated by contract owne
     mapping(uint256 => string) public tokenIdToBreed;
     event breedAssigned(string indexed breed, uint256);

@@ -4,13 +4,14 @@ from metadata.sample_metadata import sample_metadata_template
 import os
 import requests
 import json
+from scripts.upload_to_pinnata import upload_to_pinata
 
 OPENSEA_URL = "https://testnets.opensea.io/assets/goerli/{}/{}"
 
 breed_to_image_uri = {
     "FuchaProto": "https://ipfs.io/ipfs/QmThhsULrEnppySNbmMpn8gE7fk2ozFAeu8oYCdjmRVVC2?filename=FuchaProto.jpg",
-    "FuchaTemboG": "https://ipfs.io/ipfs/QmciCypyogKkAdMFXcFUJxnYpPmiQgk4mTDWSX7BduXFgg?filename=FuchaTemboY.jpg",
-    "FuchaTemboY": "https://ipfs.io/ipfs/QmSKMtre3TwQYkHY4UiRauJfgMMv3WjHvLcBq1vZgYzL9D?filename=FuchaTemboG.jpg",
+    "FuchaTemboG": "https://ipfs.io/ipfs/QmSKMtre3TwQYkHY4UiRauJfgMMv3WjHvLcBq1vZgYzL9D?filename=FuchaTemboG.jpg",
+    "FuchaTemboY": "https://ipfs.io/ipfs/QmciCypyogKkAdMFXcFUJxnYpPmiQgk4mTDWSX7BduXFgg?filename=FuchaTemboY.jpg",
 }
 
 breed_to_metadata_uri = {
@@ -43,17 +44,17 @@ def create_metadata(image_uri=None):
             breed_metadata["name"] = breed
             breed_metadata["description"] = f"3D model Nft of {breed} dustbin!"
             image_file_path = "./img/" + f"{breed}" + ".jpg"  ##'./img/pug.png'
-            print(image_file_path)
+            # print(image_file_path)
             ##checking whether its allowed to upload to ipfs from the env variable so that it does not always upload to ipfs when this script is run
             if os.getenv("UPLOAD_TO_IPFS") == "true":
                 image_uri = upload_to_ipfs(image_file_path)
-                ##upload_to_pinata(image_file_path)
+                upload_to_pinata(image_file_path)
             else:
                 if image_uri:
                     image_uri = image_uri
                 else:
                     image_uri = breed_to_metadata_uri[breed]
-            print(image_uri)
+            # print(image_uri)
             breed_metadata["image"] = image_uri
             print(breed_metadata)
             ##saving the breed_metadata dict to the metadata file name in json format

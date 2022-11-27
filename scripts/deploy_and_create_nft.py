@@ -1,8 +1,10 @@
-from brownie import FuchaNft
-from scripts.helpful_scripts import get_account
+from brownie import FuchaNft, network
+from scripts.helpful_scripts import get_account, LOCAL_DEVELOPMENT_NETWORKS
 
 
 def deploy_fucha():
+    if network.show_active() in LOCAL_DEVELOPMENT_NETWORKS:
+        account = get_account()
     account = get_account(account_name="rastas")
     fucha = FuchaNft.deploy({"from": account})
     print("FuchaNft deployed!")
@@ -14,7 +16,7 @@ def create_fucha(fucha, account, breed_index):
     breed = fucha.breed(breed_index)
     creation_tx = fucha.createNft(breed_index, {"from": account})
     creation_tx.wait(1)
-    print("created fucha nft>>")
+    print(f"created fucha {breed} nft>>")
 
 
 def main():
