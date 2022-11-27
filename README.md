@@ -12,16 +12,25 @@ The end goal is for the plastic collected to be recycled into regenerative prod
 
 * FUCHA Bins physical designs **>>>** 3D model converted to NFT for operations & governance **>>>** collection of plastic **>>>** data is measured, recorded and valued on IPFS **>>>** earn plastic credits on chain **>>>** utility recyclables (e.g. plastic furniture, Eco-bricks).
      ### STARTING POINT
-The University students organize from 5-10 **Go-green champions** who will oversee the stationing of the bins, the recycling process, learn about plastic & carbon credits incentives, NFT utility and then create a sustainable subDAO for the project in the long run, to show the Blockchain use case. 
+     * The University students organize from 5-10 **Go-green champions** who will oversee the stationing of the bins, the recycling process, learn about        plastic & carbon credits incentives, NFT utility and then create a sustainable subDAO for the project in the long run, to show the Blockchain use        case. 
 
-**Community**
-* Making the community
-* Cheaper and Eco-Friendly Building material
-* Selling Eco-bricks
-Selling of plastic wood furniture
-Selling of Carbon credits.
-Branding of Bins.
-Sale of NFTs.
+
+ ## Value Proposition
+     
+   **Companies**
+* Mitigation of plastic waste production through selling of carbon credits.
+* Provision of cheaper and more eco-friendly building material.
+* Branding opportunities to support plastic waste reduction initiatives.
+     
+    **Community**
+* Reduction of plastic waste in the community.
+* Enhancement of community appearance
+* Provision of cheaper and more Eco-friendly building material.
+     
+    **Artists**
+* Source of Income of their artistic work
+* Give back to the Society by creating appealing environment
+
 
 ## HOW IPFS IS USED
 Data is also another crucial aspect we'll be looking to leverage on, so that we will be able to create incentives to collect and recycle plastics sustainably for organizations, individuals and the community at large. We plan on utilizing the IPFS protocol for the storage of this data to ensure enhanced security, control and transparency.
@@ -34,5 +43,21 @@ Data is also another crucial aspect we'll be looking to leverage on, so that we 
    
    **Stats Storage**
    
-   * [Statistics 1](https://ipfs.io/ipfs/QmeQkoYBEfKeAcfzDhq1wmkpMvnxoCwUebgjQzbMZc5Vnj?filename=data2.png)
-   * [Statistics 2](https://ipfs.io/ipfs/Qmf1e8Xc89YjHRTBLRonns5ZUWSPmgnSXGnD4CirHK88Bk?filename=data1.png)
+* [Statistics 1](https://ipfs.io/ipfs/QmeQkoYBEfKeAcfzDhq1wmkpMvnxoCwUebgjQzbMZc5Vnj?filename=data2.png)
+* [Statistics 2](https://ipfs.io/ipfs/Qmf1e8Xc89YjHRTBLRonns5ZUWSPmgnSXGnD4CirHK88Bk?filename=data1.png)
+
+## NFT MARKET PLACE
+We used OpenSea TestNet as our NFT marketPlace becasue it is the world's first and largest web3 marketplace for NFTs and crypto collectibles.
+
+**Links to Our NFTs**
+
+* [NFT 1](https://testnets.opensea.io/assets/goerli/0x75dDDa6794f43df89D9667D2f322964322694c43/2)
+* [NFT 2](https://testnets.opensea.io/assets/goerli/0x75ddda6794f43df89d9667d2f322964322694c43/0)
+* [NFT 3](https://testnets.opensea.io/assets/goerli/0x75ddda6794f43df89d9667d2f322964322694c43/1)
+
+## TECHNICAL PART
+The **FuchaNft** contract is mainly tested on local blockchain environments and on testnets, the files(snapshots and img) were stored on **IPFS** and **Pinata**(in case our ipfs node goes down).
+  
+  **Issues encountered**
+* Theres has been an issue with **opnsea testnet goerli** not being able to fully upload the img fully, its believed to be an opensea testnet issue.
+
