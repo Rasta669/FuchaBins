@@ -47,6 +47,10 @@ Data is also another crucial aspect we'll be looking to leverage on, so that we 
    
 * [Statistics 1](https://ipfs.io/ipfs/QmeQkoYBEfKeAcfzDhq1wmkpMvnxoCwUebgjQzbMZc5Vnj?filename=data2.png)
 * [Statistics 2](https://ipfs.io/ipfs/Qmf1e8Xc89YjHRTBLRonns5ZUWSPmgnSXGnD4CirHK88Bk?filename=data1.png)
+     
+   **Website Hosting**
+   
+* [Fucha Bins](https://ipfs.io/ipfs/QmakLV7Dttph1SsrG25gVxDJBCD1mRCtTBLQ5woZretqC8/)
 
 ## NFT MARKET PLACE
 We used OpenSea TestNet as our NFT marketPlace becasue it is the world's first and largest web3 marketplace for NFTs and crypto collectibles.
@@ -61,5 +65,5 @@ We used OpenSea TestNet as our NFT marketPlace becasue it is the world's first a
 The **FuchaNft** contract is mainly tested on local blockchain environments and on testnets, the files(snapshots and img) were stored on **IPFS** and **Pinata**(in case our ipfs node goes down).
   
   **Issues encountered**
-* Theres has been an issue with **opnsea testnet goerli** not being able to fully upload the img fully, its believed to be an opensea testnet issue.
+* Theres has been an issue with **opensea testnet goerli** not being able to fully upload the img fully, its believed to be an opensea testnet issue.
 
