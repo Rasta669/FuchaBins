@@ -162,7 +162,7 @@ button:hover{
 .service{
 	background: #101010;
 	width: 100%;
-	padding: 100px 0px;
+	padding: 20px ;
 }
 .title h2{
 	color: white;
@@ -178,8 +178,8 @@ button:hover{
 	min-height: 400px;
 }
 .card{
-	height: 365px;
-	width: 335px;
+	height: 250px;
+	width: 330px;
 	padding: 20px 35px;
 	background: #191919;
 	border-radius: 20px;
@@ -301,5 +301,10 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
-
+.learn-me{
+	background-color: #191919;
+}
+.learn-me p{
+	color: white;
+}
 
